@@ -41,10 +41,5 @@ Request Body:
 ### DELETE /posts/:id  
 Soft-deletes a post (sets isDeleted: true).
 
- 
-
-Run Prisma migrations  
-npx prisma generate  
-npx prisma migrate dev  
 
 
