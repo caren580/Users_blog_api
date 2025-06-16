@@ -69,6 +69,7 @@ app.post("/posts", async (req, res) => {
         })
         res.status(200).json(post)
     }catch (e){
+        console.error(e)
         res.status(500).json({ message: "something went wrong"})
     }
 })

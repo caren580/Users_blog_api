@@ -28,7 +28,7 @@ model Posts {
   title String @map("post_title")
   content String @map("post_content")
   createdAt DateTime @default(now()) @map("created_at")
-  lastUpdated DateTime @map("last_updated")
+  lastUpdated DateTime @default(now()) @map("last_updated")
   isDeleted Boolean @default(false)@map("is_deleted")
   user_id String
   user Users@relation(fields: [user_id], references: [id], onDelete: Cascade)
